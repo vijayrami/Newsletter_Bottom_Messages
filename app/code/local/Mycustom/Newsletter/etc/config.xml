@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Mycustom_Newsletter>
+			<version>0.1.0</version>
+		</Mycustom_Newsletter>
+	</modules>
+	<global>
+		<blocks>
+			<mycustom_newsletter>
+				<class>Mycustom_Newsletter_Block</class>
+			</mycustom_newsletter>
+			<core>
+				<rewrite>
+					<messages>Mycustom_Newsletter_Block_Core_Messages</messages>
+				</rewrite>
+			</core>
+		</blocks>
+	</global>
+	<frontend>
+		<routers>
+			<newsletter>
+				<args>
+					<modules>
+						<Mycustom_Newsletter before="Mage_Newsletter_SubscriberController">Mycustom_Newsletter</Mycustom_Newsletter>
+					</modules>
+				</args>
+			</newsletter>
+		</routers>
+		<layout>
+		    <updates>
+		        <mycustom_newsletter>
+		            <file>mycustom_newsletter.xml</file>
+		        </mycustom_newsletter>
+		    </updates>
+		</layout>
+	</frontend>
+</config>

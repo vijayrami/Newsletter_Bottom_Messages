@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+        <reference name="footer.newsletter">
+            <block type="mycustom_newsletter/subscription_messages" name="subscription_messages" />
+        </reference>
+    </default>
+</layout>
